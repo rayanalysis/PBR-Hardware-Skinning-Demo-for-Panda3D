@@ -72,7 +72,7 @@ class app(ShowBase):
         # prototype hardware skinning shader for Actor nodes
         actor_shader = Shader.load(Shader.SL_GLSL, "shaders/simplepbr_vert_mod_1.vert", "shaders/simplepbr_frag_mod_1.frag")
         actor_shader = ShaderAttrib.make(actor_shader)
-        # actor_shader = actor_shader.setFlag(ShaderAttrib.F_hardware_skinning, True)
+        actor_shader = actor_shader.setFlag(ShaderAttrib.F_hardware_skinning, True)
         # char_body.setShaderAuto()
         char_body.setAttrib(actor_shader)
         
